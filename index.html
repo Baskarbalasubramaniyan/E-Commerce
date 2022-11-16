@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Zone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+
+        <div class="nav container">
+            <a href="" class="logo">Shopping Zone</a>
+            <div class="login">
+                <a href="login.html"><i class='bx bx-user'  id="cart-icon2"></i></a>
+
+            </div>
+            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+
+            <!--cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    
+                </div>
+
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                    
+                </div>
+
+                <!--Buy Button-->
+                <button type="button" class="btn-buy" onclick="openPopup()">Buy Now</button>
+                
+
+                <!--Cart Close-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+
+            <div class="popup" id="popup">
+                <img src="image/img/tick.png" alt="">
+                <h2>Thank You!</h2>
+                <p>Your Order Has been Succesfully Placed Thankyou!</p>
+                <button type="button" onclick="closePopup()">Ok</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="shop container">
+        <h2 class="section-title">Shop Product</h2>
+        
+        <div class="shop-content">
+            <!--BOX 1-->
+            <div class="product-box">
+                <img src="image/img/product1.jpg" alt="" class="product-img">
+                <h2 class="product-title">DVD PLAYER</h2>
+                <span class="price">$150</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 2-->
+            <div class="product-box">
+                <img src="image/img/product2.jpg" alt="" class="product-img">
+                <h2 class="product-title">MOBILE</h2>
+                <span class="price">$100</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 3-->
+            <div class="product-box">
+                <img src="image/img/product3.jpg" alt="" class="product-img">
+                <h2 class="product-title">WATCH</h2>
+                <span class="price">$75</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 4-->
+            <div class="product-box">
+                <img src="image/img/product4.jpg" alt="" class="product-img">
+                <h2 class="product-title">WASHING MACHINE</h2>
+                <span class="price">$200</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+            <!--BOX 5-->
+            <div class="product-box">
+                <img src="image/img/product5.jpg" alt="" class="product-img">
+                <h2 class="product-title">SONY TV</h2>
+                <span class="price">$ 150</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 6-->
+            <div class="product-box">
+                <img src="image/img/product6.jpg" alt="" class="product-img">
+                <h2 class="product-title">AIR CONDITIONAR</h2>
+                <span class="price">$350</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 7-->
+            <div class="product-box">
+                <img src="image/img/product7.jpg" alt="" class="product-img">
+                <h2 class="product-title">TABLE FAN</h2>
+                <span class="price">$ 150</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 8-->
+            <div class="product-box">
+                <img src="image/img/product8.jpg" alt="" class="product-img">
+                <h2 class="product-title">HOME THEATRE</h2>
+                <span class="price">$250</span>
+                <i class='bx bx-shopping-bag add-cart'></i> 
+            </div>
+        
+    </section>
+
+    
+    <section class="shop container">
+        <h2 class="section-title">MOBILE'S</h2>
+        
+        <div class="shop-content">
+            <!--BOX 1-->
+            <div class="product-box">
+                <img src="image/img/product9.jpg" alt="" class="product-img">
+                <h2 class="product-title">LAVA </h2>
+                <span class="price">$100</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 2-->
+            <div class="product-box">
+                <img src="image/img/product10.jpg" alt="" class="product-img">
+                <h2 class="product-title">MOTO</h2>
+                <span class="price">$80</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 3-->
+            <div class="product-box">
+                <img src="image/img/product11.jpg" alt="" class="product-img">
+                <h2 class="product-title">NOKIA BASIC</h2>
+                <span class="price">$45</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 4-->
+            <div class="product-box">
+                <img src="image/img/product12.jpg" alt="" class="product-img">
+                <h2 class="product-title">NOKIA </h2>
+                <span class="price">$90</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+            <!--BOX 5-->
+            <div class="product-box">
+                <img src="image/img/product13.jpg" alt="" class="product-img">
+                <h2 class="product-title">VIVO</h2>
+                <span class="price">$ 100</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 6-->
+            <div class="product-box">
+                <img src="image/img/product14.jpg" alt="" class="product-img">
+                <h2 class="product-title">OPPO</h2>
+                <span class="price">$150</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 7-->
+            <div class="product-box">
+                <img src="image/img/product15.jpg" alt="" class="product-img">
+                <h2 class="product-title">APPLE</h2>
+                <span class="price">$ 250</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        
+
+            <!--BOX 8-->
+            <div class="product-box">
+                <img src="image/img/product16.jpg" alt="" class="product-img">
+                <h2 class="product-title">SAMSUNG</h2>
+                <span class="price">$200</span>
+                <i class='bx bx-shopping-bag add-cart'></i> 
+            </div>
+        
+    </section>
+
+
+
+    <footer class=" foot">
+        <div>
+            <h2>Shopping Zone</h2>
+            <p>This Page is Developed Baskar </a></p>
+        </div>
+
+        <di class="social-icon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div class="legal">
+            <p>&copy; 2022 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
